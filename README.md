@@ -20,11 +20,9 @@ You'll need:
 ### How-to
 
 1. Open your favorite shell (this works on Windows too) and do:
-
 ```
 git clone git@github.com:mach-kernel/334-2013.git
 ```
-
 2. Import the project into Eclipse.
 3. Fix your build path (this is most likely broken if your eclipse directory is not C:\eclipse\ or if you're not using Windows).
 4. Set your team number within the FRC preferences
