@@ -26,7 +26,17 @@ public class Drive extends Iterative2013
 		
 		static void execute()
 		{
-			mainDrive.tankDrive(Control.leftStick.getY(), Control.rightStick.getY());
+			if (Control.leftStick.getRawButton(1) && Control.rightStick.getRawButton(1))
+			{
+				// Sensitivity when approaching pyramid. 
+				mainDrive.setMaxOutput(0.5);
+				mainDrive.tankDrive(Control.leftStick.getY(), Control.rightStick.getY());
+			}
+			else
+			{
+				mainDrive.setMaxOutput(1.0);
+				mainDrive.tankDrive(Control.leftStick.getY(), Control.rightStick.getY());
+			}	
 		}
 		
 		static void destroy()
