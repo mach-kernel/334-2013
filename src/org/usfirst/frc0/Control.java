@@ -13,8 +13,8 @@ public class Control extends Iterative2013
 	
 	static class camera
 	{
-		// Camera statically assigned to 10.3.34.11
-		static AxisCamera donCam = AxisCamera.getInstance("10.3.34.11");
+		// Camera dynamically assigned
+		static AxisCamera donCam = AxisCamera.getInstance();
 		static Servo camSrv = new Servo(5);
 		static Relay camLit = new Relay(2);
 		

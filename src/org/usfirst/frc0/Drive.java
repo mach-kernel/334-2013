@@ -29,7 +29,7 @@ public class Drive extends Iterative2013
 			if (Control.leftStick.getRawButton(1) && Control.rightStick.getRawButton(1))
 			{
 				// Sensitivity when approaching pyramid. 
-				mainDrive.setMaxOutput(0.25);
+				mainDrive.setMaxOutput(0.35);
 				mainDrive.tankDrive(Control.leftStick.getY(), Control.rightStick.getY());
 			}
 			else
